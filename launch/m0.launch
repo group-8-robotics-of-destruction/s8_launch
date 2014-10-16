@@ -1,0 +1,5 @@
+<launch>
+	<node pkg="s8_ip" type="objectTracker" name="objectTracker"></node>
+	<node pkg="s8_object_follower" type="s8_object_follower_node" name="s8_object_follower_node"></node>
+	<node pkg="s8_motor_controller" type="s8_motor_controller_node" name="s8_motor_controller_node"></node>
+</launch>

@@ -1,0 +1,21 @@
+<package>
+ <name>s8_launch</name>
+  <version>0.1.0</version>
+  <description>
+    Launch files for s8.
+  </description>
+  <license>BSD</license>
+
+  <url type="website">http://wiki.ros.org/ras_lab1_launch</url>
+
+  <author email="lwiener@kth.se">Lucas Wiener</author>
+  <maintainer email="lwiener@kth.se">Lucas Wiener</maintainer>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+
+  <run_depend>s8_ip</run_depend>
+  <run_depend>s8_object_follower</run_depend>
+  <run_depend>s8_motor_controller</run_depend>
+
+</package>

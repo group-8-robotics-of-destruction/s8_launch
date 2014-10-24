@@ -1,0 +1,6 @@
+<launch>
+	<include file="$(find s8_launch)/m1_base.launch" />
+	<node pkg="s8_turner" type="s8_turner_node" name="s8_turner_node"></node>
+	<node pkg="s8_wall_follower_controller" type="s8_wall_follower_controller_node" name="s8_wall_follower_controller_node"></node>
+	<node pkg="s8_explorer" type="s8_explorer_node" name="s8_explorer_node"></node>
+</launch>

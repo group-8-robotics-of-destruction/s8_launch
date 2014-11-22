@@ -1,0 +1,5 @@
+<launch>
+	<include file="$(find s8_launch)/m1.launch" />
+	<node pkg="s8_object_aligner" type="s8_object_aligner_node" name="s8_object_aligner_node"></node>
+	<node pkg="s8_master" type="s8_master_node" name="s8_master_node"></node>
+</launch>

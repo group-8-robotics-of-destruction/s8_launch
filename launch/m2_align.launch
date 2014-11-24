@@ -1,0 +1,6 @@
+<launch>
+    <include file="$(find s8_launch)/m1.launch" />
+    <node pkg="s8_ip_detection" type="object_detector" name="object_detector"></node>
+    <node pkg="s8_ip_classification" type="object_classifier" name="object_classifier"></node>
+    <node pkg="ras_espeak" type="ras_espeak" name="ras_espeak"></node>
+</launch>

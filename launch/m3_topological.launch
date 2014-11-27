@@ -1,0 +1,19 @@
+<launch>
+	<node pkg="s8_motor_controller" type="s8_motor_controller_node" name="s8_motor_controller"></node>
+	<node pkg="s8_ir_sensors" type="s8_ir_sensors_node" name="s8_ir_sensors"></node>
+	<node pkg="s8_orientation" type="s8_orientation_node" name="s8_orientation"></node>
+	<node pkg="s8_turner" type="s8_turner_node" name="s8_turner_node"></node>
+	<node pkg="s8_wall_follower_controller" type="s8_wall_follower_controller_node" name="s8_wall_follower_controller_node"></node>
+	<node pkg="s8_object_aligner" type="s8_object_aligner_node" name="s8_object_aligner_node"></node>
+	<!-- Comment out camera, don't need for now
+	<node pkg="s8_ip_detection" type="object_detector" name="object_detector"></node>
+	<node pkg="s8_ip_classification" type="object_classifier" name="object_classifier"></node>
+	-->
+	<node pkg="ras_espeak" type="espeak_node" name="espeak_node"></node>
+	<node pkg="s8_pose" type="s8_pose_node" name="s8_pose_node"></node>
+	<!-- Comment out master, mapper and explorer, wan't to run seperately.
+	<node pkg="s8_mapper" type="s8_mapper_node" name="s8_mapper_node"></node>
+	<node pkg="s8_master" type="s8_master_node" name="s8_master_node"></node>
+	<node pkg="s8_explorer" type="s8_explorer_node" name="s8_explorer_node"></node>
+	-->
+</launch>
